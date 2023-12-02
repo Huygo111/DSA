@@ -1,0 +1,27 @@
+Để chứng minh rằng một đồ thị là đồ thị hai mầu khi và chỉ khi nó không chứa chu trình độ dài lẻ, 
+chúng ta sẽ sử dụng phương pháp phản chứng. Cụ thể, chúng ta sẽ chứng minh hai phần sau:
+
+
+1. Nếu một đồ thị là đồ thị hai mầu, thì nó không chứa chu trình độ dài lẻ.
+
+Giả sử đồ thị G là đồ thị hai mầu và giả sử tồn tại một chu trình độ dài lẻ trong G. Đặt C là chu trình đó.
+
+Vì G là đồ thị hai mầu, nên chúng ta có thể tô mỗi đỉnh của G bằng một trong hai mầu, sao cho không có cạnh nối giữa hai đỉnh cùng mầu. 
+Điều này có nghĩa là mọi chu trình trong G phải có đỉnh đầu tiên và đỉnh cuối thuộc hai mầu khác nhau.
+
+Nhưng C là một chu trình độ dài lẻ, nên đỉnh đầu tiên và đỉnh cuối của C giống nhau.
+Điều này dẫn đến mâu thuẫn, vì nó không thể thuộc cùng một mầu và cùng một mầu khác nhau đồng thời.
+Điều này phản chứng với giả định ban đầu, cho nên đồ thị G không chứa chu trình độ dài lẻ.
+
+2. Nếu một đồ thị không chứa chu trình độ dài lẻ, thì nó là đồ thị hai mầu.
+
+Giả sử đồ thị G không chứa chu trình độ dài lẻ. Chúng ta sẽ chứng minh rằng G là 
+đồ thị hai mầu bằng cách xây dựng hai mầu phân biệt trên các đỉnh của G.
+
+Chọn một đỉnh bất kỳ trong G và đánh dấu nó bằng mầu 1. Tiếp theo, tô mầu 2 cho tất cả các đỉnh kề với đỉnh vừa được đánh dấu.
+Tiếp tục quá trình này, tô mầu lẻ cho các đỉnh chưa được tô mầu, và tô mầu chẵn cho các đỉnh kề với đỉnh đang xét.
+
+Vì G không chứa chu trình độ dài lẻ, nên mỗi cạnh của G sẽ nối hai đỉnh có mầu khác nhau. Do đó, G là đồ thị hai mầu.
+
+Kết luận: Từ cả hai phần chứng minh trên, ta có thể kết luận rằng một đồ thị là đồ thị hai mầu 
+khi và chỉ khi nó không chứa chu trình độ dài lẻ.
